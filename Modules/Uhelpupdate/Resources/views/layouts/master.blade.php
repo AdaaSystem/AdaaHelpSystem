@@ -7,13 +7,13 @@
         <title>Module Uhelpupdate</title>
 
        {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/uhelpupdate.css') }}"> --}}
+       {{-- @vite('resources/css/uhelpupdate.css') --}}
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/uhelpupdate.js') }}"></script> --}}
+        {{-- @vite('resources/js/uhelpupdate.js') --}}
     </body>
 </html>
