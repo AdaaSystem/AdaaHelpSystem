@@ -18,3 +18,11 @@ composer.lock
 /public/media
 /public/build
 /storage/installed
+uploads/profile/
+uploads/article/
+uploads/callaction/
+uploads/comment/
+uploads/featurebox/
+uploads/featureimage/
+uploads/guestticket/
+uploads/ticket/
