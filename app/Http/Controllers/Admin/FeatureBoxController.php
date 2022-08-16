@@ -124,7 +124,7 @@ class FeatureBoxController extends Controller
 				}	
 					
 				//insert new file
-				$destinationPath = 'public/uploads/featurebox/'; // upload path
+				$destinationPath = 'uploads/featurebox/'; // upload path
 				$profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
 				$files->move($destinationPath, $profileImage);
 				$boxdetails['image'] = $profileImage;

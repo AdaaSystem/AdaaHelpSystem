@@ -22,7 +22,6 @@ use Image;
 use Illuminate\Support\Str;
 use Mail;
 use App\Mail\mailmailablesend;
-use Maatwebsite\Excel\Facades\Excel;
 use DB;
 use DataTables;
 use Session;
@@ -141,7 +140,7 @@ class AdminprofileController extends Controller
                     return redirect()->back()->with('error', trans('langconvert.functions.imagevalidatefails'));
                 }else{
                    
-                        $destination = 'public/uploads/profile';
+                        $destination = 'uploads/profile';
                         $image_name = time() . '.' . $file->getClientOriginalExtension();
                         $resize_image = Image::make($file->getRealPath());
 
@@ -149,7 +148,7 @@ class AdminprofileController extends Controller
                         $constraint->aspectRatio();
                         })->save($destination . '/' . $image_name);
 
-                        $destinations = 'public/uploads/profile/'.$user->image;
+                        $destinations = 'uploads/profile/'.$user->image;
                         if(File::exists($destinations)){
                             File::delete($destinations);
                         }

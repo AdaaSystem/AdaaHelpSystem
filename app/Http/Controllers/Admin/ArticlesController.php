@@ -382,7 +382,7 @@ class ArticlesController extends Controller
         
         if($request->featureimage){
             $file = $request->featureimage;
-            $destinations = 'public/uploads/featureimage/'.$article->featureimage;
+            $destinations = 'uploads/featureimage/'.$article->featureimage;
             if(File::exists($destinations)){
                 File::delete($destinations);
             }

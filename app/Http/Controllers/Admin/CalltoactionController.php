@@ -75,7 +75,7 @@ class CalltoactionController extends Controller
         if ($files = $request->file('image')) {
 
             //insert new file
-            $destinationPath = 'public/uploads/callaction/'; // upload path
+            $destinationPath = 'uploads/callaction/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image'] = "$profileImage";
