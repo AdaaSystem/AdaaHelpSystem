@@ -17,7 +17,7 @@
 
 	</head>
 
-	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'عربى')
+	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'العربية')
 		rtl
 	@endif
 	@if(setting('SPRUKOADMIN_C') == 'off')

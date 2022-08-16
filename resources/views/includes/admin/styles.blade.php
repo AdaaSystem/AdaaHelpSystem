@@ -21,7 +21,7 @@
 		@endif
 
 
-		@if(str_replace('_', '-', app()->getLocale()) == 'عربى')
+		@if(str_replace('_', '-', app()->getLocale()) == 'العربية')
 
 		<!-- Bootstrap css -->
 		<link href="{{asset('assets/plugins/bootstrap/css/bootstrap.rtl.css')}}?v=<?php echo time(); ?>" rel="stylesheet" />

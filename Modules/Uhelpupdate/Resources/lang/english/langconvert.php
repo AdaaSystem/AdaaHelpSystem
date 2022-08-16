@@ -1,7 +1,6 @@
 <?php
     return [
         'admindashboard' => [
-            'envatoappinfo' => 'Envato App Purchase Code',
             'cannedmessages' => 'Canned Response',
             'addcannedmessages' => 'Add Canned Response',
             'cannedmessageslist' => 'Canned Response List',
@@ -9,14 +8,8 @@
             'cannedmessagestitle' => 'Canned Response Title',
             'cannedmessagesmessages' => 'Canned Response Message',
             'cannedmessagesedit' => 'Canned Response Edit',
-            'envatopersonaltoken' => 'Envato Settings',
-            'envatopersonaltokenenter' => 'Envato Personal Api Token',
-            'envatolicense' => 'Envato License Verification',
-            'assigntoenvatoapi' => 'Assign Envato Api',
             'selectcategoryenvatoapi' => 'Select Category',
-            'envato_on' => 'Envato On',
-            'envato_on_content' => '(If you disable this Envato switch, the "Envato" option will disappear from the application’s side menu.)',
-            
+
             // new added(28/03/2022)
             'maxfilesupload' => 'Max File Upload',
             'envato_expired_on' => 'Envato Expired On',

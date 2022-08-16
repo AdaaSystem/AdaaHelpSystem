@@ -20,7 +20,7 @@
 
 	</head>
 
-	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'عربى') rtl @endif
+	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'العربية') rtl @endif
 	@if(setting('SPRUKOADMIN_C') == 'off')
 		@if(setting('DARK_MODE') == 1) dark-mode @endif
 	@else

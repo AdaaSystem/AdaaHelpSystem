@@ -18,7 +18,7 @@
 	</head>
 
 	<body class="app sidebar-mini 
-	@if(str_replace('_', '-', app()->getLocale()) == 'عربى')
+	@if(str_replace('_', '-', app()->getLocale()) == 'العربية')
 		rtl
 	@endif
 	@if(setting('SPRUKOADMIN_P') == 'off')

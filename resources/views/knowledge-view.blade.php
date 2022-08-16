@@ -23,7 +23,7 @@
 		<link rel="icon" href="{{asset('uploads/logo/favicons/'.$title->image4)}}" type="image/x-icon"/>  
 		@endif
 
-		@if(str_replace('_', '-', app()->getLocale()) == 'عربى')
+		@if(str_replace('_', '-', app()->getLocale()) == 'العربية')
 
 		<!-- Bootstrap css -->
 		<link href="{{asset('assets/plugins/bootstrap/css/bootstrap.rtl.css')}}?v=<?php echo time(); ?>" rel="stylesheet" />
@@ -85,7 +85,7 @@
 		@endif
 
 	</head>
-	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'عربى')
+	<body class="@if(str_replace('_', '-', app()->getLocale()) == 'العربية')
 		rtl
 	@endif">
 
