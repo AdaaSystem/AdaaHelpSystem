@@ -108,7 +108,7 @@ class TestimonialController extends Controller
             }
         
             //insert new file
-            $destinationPath = 'uploads/testimonial/'; // upload path
+            $destinationPath = 'public/uploads/testimonial/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $testi['image'] = "$profileImage";

@@ -140,7 +140,7 @@ class AdminprofileController extends Controller
                     return redirect()->back()->with('error', trans('langconvert.functions.imagevalidatefails'));
                 }else{
                    
-                        $destination = 'uploads/profile';
+                        $destination = 'public/uploads/profile';
                         $image_name = time() . '.' . $file->getClientOriginalExtension();
                         $resize_image = Image::make($file->getRealPath());
 
@@ -148,7 +148,7 @@ class AdminprofileController extends Controller
                         $constraint->aspectRatio();
                         })->save($destination . '/' . $image_name);
 
-                        $destinations = 'uploads/profile/'.$user->image;
+                        $destinations = 'public/uploads/profile/'.$user->image;
                         if(File::exists($destinations)){
                             File::delete($destinations);
                         }

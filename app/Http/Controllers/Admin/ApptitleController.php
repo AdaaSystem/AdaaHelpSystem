@@ -56,13 +56,13 @@ class ApptitleController extends Controller
 
             //delete old file
             $testiimage = Apptitle::find($request->id);
-            $imagepath = 'uploads/logo/logo/' . $testiimage->image;
+            $imagepath = 'public/uploads/logo/logo/' . $testiimage->image;
             if (\File::exists($imagepath)) {
                 \File::delete($imagepath);
             }
 
             //insert new file
-            $destinationPath = 'uploads/logo/logo/'; // upload path
+            $destinationPath = 'public/uploads/logo/logo/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image'] = "$profileImage";
@@ -77,13 +77,13 @@ class ApptitleController extends Controller
 
             //delete old file
             $testiimage1 = Apptitle::find($request->id);
-            $imagepath1 = 'uploads/logo/darklogo/' . $testiimage1->image1;
+            $imagepath1 = 'public/uploads/logo/darklogo/' . $testiimage1->image1;
             if (\File::exists($imagepath1)) {
                 \File::delete($imagepath1);
             }
 
             //insert new file
-            $destinationPath = 'uploads/logo/darklogo/'; // upload path
+            $destinationPath = 'public/uploads/logo/darklogo/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image1'] = "$profileImage";
@@ -98,13 +98,13 @@ class ApptitleController extends Controller
 
             //delete old file
             $testiimage2 = Apptitle::find($request->id);
-            $imagepath2 = 'uploads/logo/icon/' . $testiimage2->image2;
+            $imagepath2 = 'public/uploads/logo/icon/' . $testiimage2->image2;
             if (\File::exists($imagepath2)) {
                 \File::delete($imagepath2);
             }
 
             //insert new file
-            $destinationPath = 'uploads/logo/icon/'; // upload path
+            $destinationPath = 'public/uploads/logo/icon/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image2'] = "$profileImage";
@@ -119,13 +119,13 @@ class ApptitleController extends Controller
 
             //delete old file
             $testiimage3 = Apptitle::find($request->id);
-            $imagepath3 = 'uploads/logo/darkicon/' . $testiimage3->image3;
+            $imagepath3 = 'public/uploads/logo/darkicon/' . $testiimage3->image3;
             if (\File::exists($imagepath3)) {
                 \File::delete($imagepath3);
             }
 
             //insert new file
-            $destinationPath = 'uploads/logo/darkicon/'; // upload path
+            $destinationPath = 'public/uploads/logo/darkicon/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image3'] = "$profileImage";
@@ -140,14 +140,14 @@ class ApptitleController extends Controller
 
             //delete old file
             $testiimage4 = Apptitle::find($request->id);
-            $imagepath4 = 'uploads/logo/favicons/' . $testiimage4->image4;
+            $imagepath4 = 'public/uploads/logo/favicons/' . $testiimage4->image4;
             if (\File::exists($imagepath4)) {
                 \File::delete($imagepath4);
             }
 
 
             //insert new file
-            $destinationPath = 'uploads/logo/favicons/'; // upload path
+            $destinationPath = 'public/uploads/logo/favicons/'; // upload path
             $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
             $files->move($destinationPath, $profileImage);
             $calldetails['image4'] = "$profileImage";
@@ -250,7 +250,7 @@ class ApptitleController extends Controller
         $logo = Apptitle::find($request->id);
         if ($request->logo == 'logo1') {
             if ($logo->image != null) {
-                $imagepath = 'uploads/logo/logo/' . $logo->image;
+                $imagepath = 'public/uploads/logo/logo/' . $logo->image;
                 if (\File::exists($imagepath)) {
                     \File::delete($imagepath);
                 }
@@ -260,7 +260,7 @@ class ApptitleController extends Controller
         }
         if ($request->logo == 'logo2') {
             if ($logo->image1 != null) {
-                $imagepath = 'uploads/logo/darklogo/' . $logo->image1;
+                $imagepath = 'public/uploads/logo/darklogo/' . $logo->image1;
                 if (\File::exists($imagepath)) {
                     \File::delete($imagepath);
                 }
@@ -270,7 +270,7 @@ class ApptitleController extends Controller
         }
         if ($request->logo == 'logo3') {
             if ($logo->image2 != null) {
-                $imagepath = 'uploads/logo/icon/' . $logo->image2;
+                $imagepath = 'public/uploads/logo/icon/' . $logo->image2;
                 if (\File::exists($imagepath)) {
                     \File::delete($imagepath);
                 }
@@ -280,7 +280,7 @@ class ApptitleController extends Controller
         }
         if ($request->logo == 'logo4') {
             if ($logo->image3 != null) {
-                $imagepath = 'uploads/logo/darkicon/' . $logo->image3;
+                $imagepath = 'public/uploads/logo/darkicon/' . $logo->image3;
                 if (\File::exists($imagepath)) {
                     \File::delete($imagepath);
                 }
@@ -290,7 +290,7 @@ class ApptitleController extends Controller
         }
         if ($request->logo == 'logo5') {
             if ($logo->image4 != null) {
-                $imagepath = 'uploads/logo/favicons/' . $logo->image4;
+                $imagepath = 'public/uploads/logo/favicons/' . $logo->image4;
                 if (\File::exists($imagepath)) {
                     \File::delete($imagepath);
                 }
